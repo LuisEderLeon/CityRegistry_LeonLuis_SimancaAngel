@@ -6,3 +6,9 @@ def registrarciudad():
     poblacion=input("Escriba la poblacion estimada de la ciudad: ")
     pais=input("Escriba el pais al que pertenece la ciudad: ")
     
+def leerCiudades():
+    input("""Ingrese 
+          """)
+    ciudades = leerJson("ciudades")
+    for ciudad in ciudades:
+        print(ciudad)
