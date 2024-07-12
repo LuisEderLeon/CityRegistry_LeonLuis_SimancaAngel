@@ -10,4 +10,6 @@ Por favor ingrese una opcion
 0 - Salir
 ---------------------------------------------------
 """)
-input("Ingrese su opcion: ")
+opcion = input("Ingrese su opcion: ")
+if opcion == '1':
+    registrarciudad()
