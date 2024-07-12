@@ -15,7 +15,7 @@ def leerCiudades():
 Nombre | Postal | Poblacion | Pais
           
 Ingrese su opcion: """)
-    ciudades = leerJson("ciudades")
+    ciudades = leerJson("git/ciudades")
     for ciudad in ciudades:
         if opcion == "Nombre":
             print(ciudad["Nombre"])
