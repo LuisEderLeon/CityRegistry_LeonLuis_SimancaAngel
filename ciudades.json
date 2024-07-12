@@ -1,14 +1,14 @@
 [
     {
         "Nombre": "Bucaramanga",
-        "Codigo Postal": "21342124",
+        "Codigo Postal": "12345",
         "Poblacion Estimada": "20000",
-        "Pais": "colombia"
+        "Pais": "Colombia"
     },
     {
-        "Nombre": "giron",
-        "Codigo Postal": "21321321",
+        "Nombre": "Giron",
+        "Codigo Postal": "54321",
         "Poblacion Estimada": "124214124",
-        "Pais": "colombia"
+        "Pais": "Colombia"
     }
 ]

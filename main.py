@@ -14,8 +14,8 @@ Por favor ingrese una opcion
 """)
 opcion = input("Ingrese su opcion: ")
 if opcion == '1':
-    registrarciudad()
+    registrarCiudad()
 elif opcion == '2':
-    editarciudades()
+    editarCiudades()
 elif opcion == '3':
     leerCiudades()
