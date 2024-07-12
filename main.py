@@ -1,3 +1,5 @@
+from modregistro import *
+import json
 print("""
 Bienvenido al registro de ciudades
 
