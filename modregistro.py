@@ -10,8 +10,19 @@ def registrarciudad():
     guardarJson("ciudades", ciudades)
     
 def leerCiudades():
-    input("""Ingrese 
-          """)
+    opcion = input("""Ingrese que dato desea mostrar de las ciudades
+          
+Nombre | Postal | Poblacion | Pais
+          
+Ingrese su opcion: """)
     ciudades = leerJson("ciudades")
     for ciudad in ciudades:
-        print(ciudad)
+        if opcion == "Nombre":
+            print(ciudad["Nombre"])
+        elif opcion == "Postal":
+            print(ciudad["Codigo Postal"])
+        elif opcion == "Poblacion":
+            print(ciudad["Poblacion Estimada"])
+        elif opcion == "Pais":
+            print(ciudad["Pais"])
+        

@@ -15,3 +15,7 @@ Por favor ingrese una opcion
 opcion = input("Ingrese su opcion: ")
 if opcion == '1':
     registrarciudad()
+elif opcion == '2':
+    editarciudades()
+elif opcion == '3':
+    leerCiudades()
