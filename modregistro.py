@@ -5,9 +5,9 @@ def registrarciudad():
     postal=input("Escriba el codigo postal de la ciudad: ")
     poblacion=input("Escriba la poblacion estimada de la ciudad: ")
     pais=input("Escriba el pais al que pertenece la ciudad: ")
-    ciudades=[]
+    ciudades=leerJson("git/ciudades")
     ciudades.append({"Nombre": nombre, "Codigo Postal": postal, "Poblacion Estimada": poblacion, "Pais": pais})
-    guardarJson("ciudades", ciudades)
+    guardarJson("git/ciudades", ciudades)
     
 def leerCiudades():
     opcion = input("""Ingrese que dato desea mostrar de las ciudades
