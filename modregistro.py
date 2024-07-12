@@ -11,21 +11,36 @@ def registrarCiudad():
     
 def leerCiudades():
     ciudades = leerJson("ciudades")
-    print(ciudades)
+    nombres = []
+    postales = []
+    poblaciones = []
+    paises = []
     opcion = input("""Ingrese que dato desea mostrar de las ciudades
           
 Nombre | Postal | Poblacion | Pais
           
 Ingrese su opcion: """)
     for ciudad in ciudades:
-        if opcion == "Nombre":
-            print(ciudad["Nombre"])
-        elif opcion == "Postal":
-            print(ciudad["Codigo Postal"])
-        elif opcion == "Poblacion":
-            print(ciudad["Poblacion Estimada"])
-        elif opcion == "Pais":
-            print(ciudad["Pais"])
+        nombres.append(ciudad.get("Nombre"))
+        postales.append(ciudad.get("Codigo Postal"))
+        poblaciones.append(ciudad.get("Poblacion Estimada"))
+        paises.append(ciudad.get("Pais"))
+    nombres.sort()
+    postales.sort()
+    poblaciones.sort()
+    paises.sort()
+    if opcion == "Nombre":
+        for nombre in nombres:
+            print(nombre)
+    elif opcion == "Postal":
+        for postal in postales:
+            print(postal)
+    elif opcion == "Poblacion":
+        for poblacion in poblaciones:
+            print(poblacion)
+    elif opcion == "Pais":
+        for pais in paises:
+            print(pais)
         
 def editarCiudades():
     ciudades = list(leerJson("ciudades"))
